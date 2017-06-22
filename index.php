@@ -10,7 +10,7 @@
 define("GENERATED_DIR", dirname(__FILE__).DIRECTORY_SEPARATOR.'generated/'); // where thumbs are cached
 define("THUMBNAIL_SIZE", 85); // size of thumbnails (square)
 define("PROFILE_BASEURL", 'http://static-cdn.jtvnw.net/jtv_user_pictures/');
-define("IMAGE_NAME_REGEXP", '`^(?:[\w]+\-profile_image\-[\d\w]+\-|xarth/404_user_)300x300\.(?:jpeg|png)$`'); // Twitch profile image URL pattern https://regex101.com/r/pJ2fC4/2
+define("IMAGE_NAME_REGEXP", '`^(?:[\w]+\-profile_image\-[\d\w]+\-|[\d\w]+\-profile_image\-|xarth\/404_user_)300x300\.(?:jpeg|png)$`'); // Twitch profile image URL pattern https://regex101.com/r/pJ2fC4/5
 
 // "variable" constants, just to be a bit safer and make sure we won't screw anything up later
 define("REMOTE_IMAGE", (isset($_GET['src']) ? $_GET['src'] : 'xarth/404_user_300x300.png'));
